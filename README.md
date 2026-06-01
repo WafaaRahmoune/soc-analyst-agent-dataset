@@ -11,10 +11,10 @@ The dataset contains **3,057 instances** spanning two alert-input formats (`chai
 
 Given a correlated Wazuh alert, the agent must:
 
-1. **Phase 1 — Investigation & Enrichment**: read the full alert, extract every IoC (IPs, hashes, domains, accounts, hosts, paths), enrich external indicators via threat intelligence, and decide whether to close as FP or dig deeper.
-2. **Phase 2 — Schema Discovery**: discover the exact OpenSearch field paths before hunting.
-3. **Phase 3 — Threat Hunting**: translate hunting questions into concrete OpenSearch DSL queries, run them, and gather literal evidence.
-4. **Phase 4 — Recommendation**: synthesize findings into a verdict with severity, scope, immediate actions, remediation, and next steps.
+1. **Phase 1: nvestigation & Enrichment**: read the full alert, extract every IoC (IPs, hashes, domains, accounts, hosts, paths), enrich external indicators via threat intelligence, and decide whether to close as FP or dig deeper.
+2. **Phase 2: Schema Discovery**: discover the exact OpenSearch field paths before hunting.
+3. **Phase 3: Threat Hunting**: translate hunting questions into concrete OpenSearch DSL queries, run them, and gather literal evidence.
+4. **Phase 4: Recommendation**: synthesize findings into a verdict with severity, scope, immediate actions, remediation, and next steps.
 
 The agent reasons in `<think>...</think>` blocks before every tool call and emits a final JSON verdict.
 
